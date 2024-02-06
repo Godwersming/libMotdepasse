@@ -62,7 +62,7 @@ namespace libMotdepasse
         {
             foreach (char c in mdp)
             {
-                if (char.IsLetterOrDigit(c))
+                if (!char.IsLetterOrDigit(c))
                 {
                     return true;
                 }
